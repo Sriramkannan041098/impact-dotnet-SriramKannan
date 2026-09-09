@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchoolManagementApp.ModuleB
+namespace ModuleB
 {
-    internal class Helper
+    public static class Helper
     {
+        public static void Greet()
+        {
+            Console.WriteLine("Hello from ModuleB Helper!");
+        }
     }
 }

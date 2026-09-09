@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchoolManagementApp.models
+namespace Models
 {
-    internal class modelOne
+    public class modelOne
     {
+
     }
 }

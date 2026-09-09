@@ -18,19 +18,33 @@ namespace SchoolManagement
 
         public void DisplayStudentInfo()
         {
-            Console.WriteLine($"\nStudent Details: {ID} - {Name}");
+            try 
+            {
+               Console.WriteLine($"\nStudent Details: {ID} - {Name}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }   
 
         public void NamingConvensions()
         {
-            // Local variable - PascalCase
-            string DeptName = "SoftwareEngineering";         
+            try
+            {
+                // Local variable - PascalCase
+                string DeptName = "SoftwareEngineering";
 
-            // Local variable - camelCase
-            string courseName = ".Net Full Stack Development";
+                // Local variable - camelCase
+                string courseName = ".Net Full Stack Development";
 
-            Console.WriteLine($"Department: {DeptName}");
-            Console.WriteLine($"Course: {courseName}");
+                Console.WriteLine($"Department: {DeptName}");
+                Console.WriteLine($"Course: {courseName}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }            
         }
     }
 }

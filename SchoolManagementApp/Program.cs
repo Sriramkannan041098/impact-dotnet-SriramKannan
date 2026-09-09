@@ -18,7 +18,7 @@ class Program
         students.NamingConvensions();
 
 
-        Console.WriteLine("\nDemonstrating the use of namespaces and resolving naming conflicts:");
+         Console.WriteLine("\nDemonstrating the use of namespaces and resolving naming conflicts:");
          ModuleA.Helper.Greet();
          ModuleB.Helper.Greet();
     }

@@ -8,7 +8,14 @@ namespace ModuleB
     {
         public static void Greet()
         {
-            Console.WriteLine("Hello from ModuleB Helper!");
+            try
+            {
+                Console.WriteLine("Hello from ModuleB Helper!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }            
         }
     }
 }

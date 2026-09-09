@@ -5,8 +5,8 @@ class Program
 {
     public static void Main(string[] args)
     {        
-        string appName = "School Management Console";
-        Console.WriteLine($"Welcome to the {appName} App.");     
+        string appName = "School Management";
+        Console.WriteLine($"Welcome to the {appName} Console App.");     
         
         Students students = new Students("Sriram Kannan");
         students.DisplayStudentInfo();

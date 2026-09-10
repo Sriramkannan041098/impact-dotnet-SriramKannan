@@ -1,6 +1,4 @@
-﻿
-
-using CSharpTypeConcepts.EnumFlags;
+﻿using CSharpTypeConcepts.EnumFlags;
 using CSharpTypeConcepts.Nullable;
 using CSharpTypeConcepts.TypeConversions;
 using CSharpTypeConcepts.ValueRefType;

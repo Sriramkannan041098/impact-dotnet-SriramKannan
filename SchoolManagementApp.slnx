@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="CSharpModernSyntax/CSharpModernSyntax.csproj" Id="567af09a-5ef6-427b-bfbd-15989eebd028" />
   <Project Path="CSharpTypeConcepts/CSharpTypeConcepts.csproj" Id="5d356f18-5164-4e50-8aab-7aeecc924796" />
   <Project Path="SchoolManagementApp/SchoolManagementApp.csproj" />
 </Solution>

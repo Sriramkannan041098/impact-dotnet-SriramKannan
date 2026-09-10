@@ -34,7 +34,7 @@ namespace CSharpTypeConcepts.ValueRefType
                 double originalValue = 25.75;
                 int convertedValue = (int)originalValue;
 
-                Console.WriteLine("\nImplicit Type Conversions:");
+                Console.WriteLine("\nExplicit Type Conversions:");
                 Console.WriteLine($"Original double: {originalValue}");
                 Console.WriteLine($"Converted int: {convertedValue}");
 
@@ -49,7 +49,6 @@ namespace CSharpTypeConcepts.ValueRefType
                 Console.WriteLine($"Parsed int: {parsedNumber}");
 
                 Console.WriteLine("\nConvert String to Int using TryParse:");
-                Console.WriteLine("\nConvert String to Int:");
                 string userInput = "345";
 
                 if (int.TryParse(userInput, out int parsedNum))

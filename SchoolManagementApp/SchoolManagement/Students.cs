@@ -11,7 +11,7 @@ namespace SchoolManagement
 
 
         public Students(string name, string id)
-        { 
+        {            
             Name = name;
             ID = id;
         }
@@ -20,7 +20,7 @@ namespace SchoolManagement
         {
             try 
             {
-               Console.WriteLine($"\nStudent Details: {ID} - {Name}");
+               Console.WriteLine($"Student Details: {ID} - {Name}");
             }
             catch (Exception ex)
             {
@@ -32,14 +32,25 @@ namespace SchoolManagement
         {
             try
             {
-                // Local variable - PascalCase
-                string DeptName = "SoftwareEngineering";
-
-                // Local variable - camelCase
-                string courseName = ".Net Full Stack Development";
+                
+                string DeptName = "SoftwareEngineering";   // Local variable - PascalCase                
+                string courseName = ".Net Full Stack Development";  // Local variable - camelCase
+                int studentCount = 25;
+                double courseDuration = 6.5;
+                bool isCourseActive = true;
 
                 Console.WriteLine($"Department: {DeptName}");
                 Console.WriteLine($"Course: {courseName}");
+                Console.WriteLine($"Student Count: {studentCount}");
+                Console.WriteLine($"Course Duration: {courseDuration} months");
+                Console.WriteLine($"Course Active: {isCourseActive}");
+
+                Console.WriteLine("\nTry a variable named class, observe the error and fix ");
+                string @class = "C#"; 
+                Console.WriteLine($"Class: {@class}");
+                // Error: 'class' is a keyword and cannot be used as an identifier.
+                // to fix this '@' used to treat the reserved keyword as an identifier
+                
             }
             catch (Exception ex)
             {

@@ -14,6 +14,14 @@ namespace SchoolManagementApp.Region
         #endregion
 
 
+        //#if DEBUG
+        //public void DebugInfo()
+        //{
+        //    Console.WriteLine("Debugging RegionClass: StudentId = {0}, StudentName = {1}", studentId, studentName);
+        //}
+        //#endif
+
+       
         #region Properties
 
         public int StudentId
@@ -45,11 +53,12 @@ namespace SchoolManagementApp.Region
         }
         #endregion
 
+       
         #region Methods
         public void DisplayRegionInfo()
         {
             try
-            {                
+            {
                 Console.WriteLine($"Student Name: {StudentName}");
                 Console.WriteLine($"Student ID: {StudentId}");
             }

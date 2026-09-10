@@ -50,7 +50,7 @@ namespace SchoolManagement
                 Console.WriteLine($"Class: {@class}");
                 // Error: 'class' is a keyword and cannot be used as an identifier.
                 // to fix this '@' used to treat the reserved keyword as an identifier
-                
+
             }
             catch (Exception ex)
             {

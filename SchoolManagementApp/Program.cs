@@ -1,6 +1,7 @@
 ﻿#define TRIAL_VERSION
 
 using SchoolManagement;
+using SchoolManagementApp.Region;
 
 class Program
 {
@@ -33,6 +34,8 @@ class Program
         Console.WriteLine("\n\nTask 1.8: Demonstrate Preprocessor Directives:");
         Program trailProgram = new Program();
         trailProgram.TrailTask();
+        RegionClass regionClass = new RegionClass("Sriram", 678);
+        regionClass.DisplayRegionInfo();
     }
 
 

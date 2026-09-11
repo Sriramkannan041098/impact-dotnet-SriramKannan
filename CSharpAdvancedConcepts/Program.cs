@@ -23,6 +23,6 @@ class Program
 
 
         Console.WriteLine("\n\n\nTask Mini Q3 Demonstrating");
-        ContactCard miniQ3 = new ContactCard();
+        ContactCardDemo miniQ3 = new ContactCardDemo();
     }
 }

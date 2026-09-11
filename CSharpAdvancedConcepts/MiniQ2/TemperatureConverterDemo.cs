@@ -16,51 +16,34 @@ namespace CSharpAdvancedConcepts.MiniQ2
         {
             try
             {
-                Console.WriteLine(
-                    "Mini Q2: Temperature Converter"
-                );
-
                 double celsius = 25;
 
-                Console.WriteLine(
-                    $"Celsius: {celsius}°C"
-                );
+                Console.WriteLine($"Celsius: {celsius}°C");
 
-                Console.WriteLine(
-                    $"Fahrenheit: {ConvertTemperature(celsius, "C", "F"):F2}°F"
-                );
+                Console.WriteLine($"Fahrenheit: {ConvertTemperature(celsius, "C", "F"):F2}°F");
 
-                Console.WriteLine(
-                    $"Kelvin: {ConvertTemperature(celsius, "C", "K"):F2}K"
-                );
+                Console.WriteLine($"Kelvin: {ConvertTemperature(celsius, "C", "K"):F2}K");
+
+
 
                 double fahrenheit = 77;
 
-                Console.WriteLine(
-                    $"\nFahrenheit: {fahrenheit}°F"
-                );
+                Console.WriteLine($"\nFahrenheit: {fahrenheit}°F");
 
-                Console.WriteLine(
-                    $"Celsius: {ConvertTemperature(fahrenheit, "F", "C"):F2}°C"
-                );
+                Console.WriteLine($"Celsius: {ConvertTemperature(fahrenheit, "F", "C"):F2}°C");
 
-                Console.WriteLine(
-                    $"Kelvin: {ConvertTemperature(fahrenheit, "F", "K"):F2}K"
-                );
+                Console.WriteLine($"Kelvin: {ConvertTemperature(fahrenheit, "F", "K"):F2}K");
+
+
+
 
                 double kelvin = 298.15;
 
-                Console.WriteLine(
-                    $"\nKelvin: {kelvin}K"
-                );
+                Console.WriteLine($"\nKelvin: {kelvin}K");
 
-                Console.WriteLine(
-                    $"Celsius: {ConvertTemperature(kelvin, "K", "C"):F2}°C"
-                );
+                Console.WriteLine($"Celsius: {ConvertTemperature(kelvin, "K", "C"):F2}°C");
 
-                Console.WriteLine(
-                    $"Fahrenheit: {ConvertTemperature(kelvin, "K", "F"):F2}°F"
-                );
+                Console.WriteLine($"Fahrenheit: {ConvertTemperature(kelvin, "K", "F"):F2}°F");
             }
             catch (Exception ex)
             {
@@ -69,10 +52,7 @@ namespace CSharpAdvancedConcepts.MiniQ2
         }
 
         // Overload 1
-        private double ConvertTemperature(
-            double value,
-            string fromUnit,
-            string toUnit)
+        private double ConvertTemperature(double value, string fromUnit, string toUnit)
         {
             if (fromUnit == toUnit)
             {
@@ -115,10 +95,7 @@ namespace CSharpAdvancedConcepts.MiniQ2
         }
 
         // Overload 2
-        private double ConvertTemperature(
-            double value,
-            char fromUnit,
-            char toUnit)
+        private double ConvertTemperature( double value, char fromUnit, char toUnit)
         {
             return ConvertTemperature(
                 value,

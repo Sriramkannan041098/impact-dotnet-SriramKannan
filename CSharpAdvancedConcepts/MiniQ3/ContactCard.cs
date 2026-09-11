@@ -4,16 +4,19 @@ using System.Text;
 
 namespace CSharpAdvancedConcepts.MiniQ3
 {
-    public class ContactCard
+    public struct ContactCard
     {
-        public ContactCard()
+        public string Name { get; set; }
+
+        public string PhoneNumber { get; set; }
+
+
+
+
+        public ContactCard(string name, string phoneNumber)
         {
-            Console.WriteLine("ContactCard class constructor called");
-            DisplayContactInfo();
-        }
-        public void DisplayContactInfo()
-        {
-            Console.WriteLine("Displaying contact information");
+            Name = name;
+            PhoneNumber = phoneNumber;
         }
     }
 }

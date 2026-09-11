@@ -77,7 +77,7 @@ namespace CSharpModernSyntax.StudentClass
     public class Student
     {
         // const field
-        public const string CollegeName = "ABC Engineering College";
+        public const string CollegeName = "SRM TRP Engineering College";
 
         // readonly field
         public readonly int StudentId;

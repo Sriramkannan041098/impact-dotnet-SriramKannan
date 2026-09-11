@@ -29,10 +29,13 @@ namespace CSharpAdvancedConcepts.MiniQ1
                 };
 
 
+                /*this renders specific data(name/price) based on category wise*/
                 var groupItems = item.GroupBy(p => p.Category);
-                Console.WriteLine($"Product Catalog Grouped by Category:\n " +
-                    $"{string.Join("\n", groupItems.Select(g => $"{g.Key}: {string.Join(", ", g.Select(p => p.Name))}"))}");
+                Console.WriteLine($"Product Catalog Grouped by Category:");
+                Console.WriteLine($"{string.Join("\n", groupItems.Select(g => $"{g.Key}: {string.Join(", ", g.Select(p => p.Name))}"))}");
 
+
+                /*this renders all 3 data based on category wise*/
                 foreach (var group in groupItems)
                 {
                     Console.WriteLine($"\nCategory: {group.Key}");
@@ -41,8 +44,8 @@ namespace CSharpAdvancedConcepts.MiniQ1
                     {
                         Console.WriteLine($"Product Name: {prod.Name}, Price: {prod.Price}");
                     }
-                    //Console.WriteLine("  ");
                 };
+                
             }
             catch (Exception ex)
             {

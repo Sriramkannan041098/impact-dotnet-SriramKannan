@@ -1,4 +1,11 @@
 <Solution>
-  <Project Path="CSharpTypeConcepts/CSharpTypeConcepts.csproj" Id="5d356f18-5164-4e50-8aab-7aeecc924796" />
-  <Project Path="SchoolManagementApp/SchoolManagementApp.csproj" />
+  <Folder Name="/Assignment - 1/">
+    <Project Path="CSharpAdvancedConcepts/CSharpAdvancedConcepts.csproj" Id="6f171fac-af93-4801-b720-19a665cc3522" />
+    <Project Path="CSharpModernSyntax/CSharpModernSyntax.csproj" Id="567af09a-5ef6-427b-bfbd-15989eebd028" />
+    <Project Path="CSharpTypeConcepts/CSharpTypeConcepts.csproj" Id="5d356f18-5164-4e50-8aab-7aeecc924796" />
+    <Project Path="SchoolManagementApp/SchoolManagementApp.csproj" />
+  </Folder>
+  <Folder Name="/Assignment - 2/">
+    <Project Path="SampleTaskExe/SampleTaskExe.csproj" Id="1a2aaa77-738e-4c4c-a085-4e6c6692cd66" />
+  </Folder>
 </Solution>

@@ -1,7 +1,10 @@
-﻿#define TRIAL_VERSION
+﻿#define TRIAL_VERSION 
+// This Preprocessor directive make the complier to include/ exclude the code at compile time based on the condition.
+
+
+using SchoolManagementApp.Region;
 
 using SchoolManagement;
-using SchoolManagementApp.Region;
 
 class Program
 {
@@ -26,7 +29,7 @@ class Program
         ModuleB.Helper.Greet();
 
         //Task 1.7: Demonstrating naming conventions
-        Console.WriteLine("\n\nTask 1.7: Demonstrate Naming Conventions:");
+        Console.WriteLine("\n\nTask 1.7: Demonstrate Naming Conventions and handling Reserved Keywords:");
         students.NamingConvensions();
 
 
@@ -34,8 +37,10 @@ class Program
         Console.WriteLine("\n\nTask 1.8: Demonstrate Preprocessor Directives:");
         Program trailProgram = new Program();
         trailProgram.TrailTask();
-        RegionClass regionClass = new RegionClass("Sriram", 678);
+        RegionClass regionClass = new RegionClass("Sriram Kannan", 678);  // "Sriram Kannan", 678
         regionClass.DisplayRegionInfo();
+        //RegionClass regionClass2 = new RegionClass();  // "Sriram Kannan", 678
+        //regionClass2.DisplayRegionInfo();
     }
 
 
@@ -43,7 +48,7 @@ class Program
     {
         try
         {
-            #if TRIAL_VERSION
+            #if !TRIAL_VERSION
               Console.WriteLine("Running Trial Version");
             #else
               Console.WriteLine("Running Full Version");

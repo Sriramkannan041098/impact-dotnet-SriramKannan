@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CSharpTypeConcepts.ValueRefType
+namespace CSharpTypeConcepts.ImplicitExplicit
 {
     public class DemonstrateTypeConversions
     {
@@ -43,6 +43,8 @@ namespace CSharpTypeConcepts.ValueRefType
                    are converted to Lower data type manually.
                 */
 
+
+                /*Stirng to number convertion*/
                 Console.WriteLine("\nConvert String to Int:");
                 string newNumber = "123";
                 int parsedNumber = int.Parse(newNumber);  //int.Parse is used to convert string to int
@@ -51,6 +53,7 @@ namespace CSharpTypeConcepts.ValueRefType
                 Console.WriteLine("\nConvert String to Int using TryParse:");
                 string userInput = "345";
 
+                
                 if (int.TryParse(userInput, out int parsedNum))
                 {
                     Console.WriteLine($"TryParse: {parsedNum}");
@@ -68,10 +71,11 @@ namespace CSharpTypeConcepts.ValueRefType
                 Console.WriteLine($"Convert.ToInt32: {convertedNumber}");
 
 
-               /*
-                 If the value is string rather than number then ToInt32 will throw an exception
-                 Whereas, if the value is string rather than number then TryParse will return false and not throw an exception.
-               */
+                /*
+                  If the value is string rather than number then ToInt32 will throw an exception
+                  Whereas, if the value is string rather than number then TryParse will return false and not throw an exception.
+                  Similarly, int.parse also throws an exception if the string is not a valid number.
+                */
             }
             catch (Exception ex)
             {
@@ -80,3 +84,9 @@ namespace CSharpTypeConcepts.ValueRefType
         }
     }
 }
+
+
+/* 
+ * "out" is a C# keyword that lets a method return a value through a parameter in addition to its normal return value.
+ * (int.TryParse(userInput, out int parsedNum) -  this syntax uwas introduced in C# 7+ versions
+ */

@@ -33,7 +33,7 @@ namespace SchoolManagement
             try
             {
                 
-                string DeptName = "SoftwareEngineering";   // Local variable - PascalCase                
+                string DeptName = "Mechanical Engineering";   // Local variable - PascalCase                
                 string courseName = ".Net Full Stack Development";  // Local variable - camelCase
                 int studentCount = 25;
                 double courseDuration = 6.5;

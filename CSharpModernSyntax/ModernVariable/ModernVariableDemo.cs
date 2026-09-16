@@ -16,12 +16,10 @@ namespace CSharpModernSyntax.ModernVariable
 
                 Console.WriteLine($"var number: {number}");
 
-                // Uncommenting the below line causes a compile-time error
+                // Uncommenting the below line causes a compile-time error                
+                // Compile Error: A variable declared using 'var' cannot be reassigned to a different type
                 // number = "Hello";
 
-                Console.WriteLine(
-                    "Compile Error: A variable declared using 'var' cannot be reassigned to a different type."
-                );
 
                 // dynamic variable
                 dynamic value = "Hello";
@@ -52,3 +50,8 @@ namespace CSharpModernSyntax.ModernVariable
         }
     }
 }
+
+/*
+ * var - generally its used to hold values of identical datatype
+ * dynamic - this is utilized to hold values of different datatype
+ */

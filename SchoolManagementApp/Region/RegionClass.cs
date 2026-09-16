@@ -12,19 +12,11 @@ namespace SchoolManagementApp.Region
         private string studentName;
 
         #endregion
+             
 
-
-        //#if DEBUG
-        //public void DebugInfo()
-        //{
-        //    Console.WriteLine("Debugging RegionClass: StudentId = {0}, StudentName = {1}", studentId, studentName);
-        //}
-        //#endif
-
-       
         #region Properties
 
-        public int StudentId
+        public int StudentId 
         {
             get { return studentId; }
             set { studentId = value; }
@@ -60,7 +52,7 @@ namespace SchoolManagementApp.Region
             try
             {
                 Console.WriteLine($"Student Name: {StudentName}");
-                Console.WriteLine($"Student ID: {StudentId}");
+                Console.WriteLine($"Student ID: P{StudentId}\n");
             }
             catch (Exception ex)
             {
@@ -68,5 +60,14 @@ namespace SchoolManagementApp.Region
             }
         }
         #endregion
+
+
+        #region DEBUG
+        public void DebugInfo()
+        {
+            Console.WriteLine("Debugging RegionClass: StudentId = {0}, StudentName = {1}", studentId, studentName);
+        }
+        #endregion
+
     }
 }

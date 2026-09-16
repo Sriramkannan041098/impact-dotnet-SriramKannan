@@ -30,10 +30,10 @@ namespace CSharpAdvancedConcepts.MiniQ3
 
 
 
+                Console.Write("Enter name : ");
+                string? searchName = Console.ReadLine();
 
-                string searchName = "sRiRaM";
-
-                Console.WriteLine( $"\nSearching for: {searchName}");
+                Console.WriteLine( $"\nSearching for {searchName}...");
 
                 bool found = false;
 

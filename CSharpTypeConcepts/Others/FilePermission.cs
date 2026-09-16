@@ -1,4 +1,4 @@
-﻿namespace CSharpTypeConcepts.SecNamespaces
+﻿namespace CSharpTypeConcepts.Others
 {
     [Flags]
     public enum FilePermission

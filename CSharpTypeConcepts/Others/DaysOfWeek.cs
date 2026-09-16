@@ -1,5 +1,6 @@
-﻿namespace CSharpTypeConcepts.SecNamespaces
+﻿namespace CSharpTypeConcepts.Others
 {
+    
     public enum DaysOfWeek
     {        
         Monday = 1,

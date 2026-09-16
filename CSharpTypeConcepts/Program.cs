@@ -1,6 +1,6 @@
-﻿using CSharpTypeConcepts.EnumFlags;
+﻿using CSharpTypeConcepts.EnumsFlags;
 using CSharpTypeConcepts.Nullable;
-using CSharpTypeConcepts.TypeConversions;
+using CSharpTypeConcepts.ImplicitExplicit;
 using CSharpTypeConcepts.ValueRefType;
 
 class Program

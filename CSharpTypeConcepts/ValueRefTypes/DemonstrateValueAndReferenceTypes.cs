@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CSharpTypeConcepts.SecNamespaces;
 
-namespace CSharpTypeConcepts.EnumFlags
-{
-    using CSharpTypeConcepts.SecNamespaces;
-    using System;
+namespace CSharpTypeConcepts.ValueRefType
+{   
 
     public class DemonstrateValueAndReferenceTypes
     {
-        private int FirstNum { get; set;  } 
+        private int FirstNum { get; set; } 
         private int SecondNum { get; set; }
 
         private int[] arrayOne;
@@ -32,10 +31,12 @@ namespace CSharpTypeConcepts.EnumFlags
             coordinate1 = new CoordinateStruct(10, 20);
             coordinate2 = coordinate1;
             coordinate2.X = 100;
+            coordinate2.Y = -361;
 
             coordinate3 = new CoordinateClass(10, 20);
             coordinate4 = coordinate3;
             coordinate4.X = 100;          
+            coordinate4.Y = 678;
 
         }
 
@@ -67,7 +68,7 @@ namespace CSharpTypeConcepts.EnumFlags
                 /*
                  *  Since array is a reference type,
                  *  changing arrayTwo also changes arrayOne 
-                 *  because they both reference the same array in memory.
+                 *  because they both refers the same array in memory.
                  */
                 Console.WriteLine("\nStruct and Class Demonstration:");
                 Console.WriteLine($"coordinate Struct: ({coordinate1.X}, {coordinate1.Y})");

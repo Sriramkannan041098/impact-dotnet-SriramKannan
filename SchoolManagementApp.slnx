@@ -13,6 +13,7 @@
     <Project Path="OOPsConcept2/OOPsConcept2.csproj" Id="1a5a110d-bf59-44e3-831a-5c0f2aea8b21" />
   </Folder>
   <Folder Name="/Assignment - 3/">
+    <Project Path="A3_DesignPatterns/A3_DesignPatterns.csproj" Id="dbf90624-1bfc-4eb5-88f5-43d4f67c669e" />
     <Project Path="A3_ExceptionsDisposalAsync/A3_ExceptionsDisposalAsync.csproj" Id="da358d5f-efe7-4c35-8881-79134f077aea" />
   </Folder>
 </Solution>

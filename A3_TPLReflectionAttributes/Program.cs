@@ -17,8 +17,7 @@ Console.WriteLine("\n\nTask 3.12 - Custom Attribute Validator");
 
 User user =new User(
    1,
-   "SriramFullStackDeveloper",
-   "sriram.kannan@psiog.com"
+   "Joseph Sriram AliKhan"
 );
 UserValidator validator = new UserValidator();
 

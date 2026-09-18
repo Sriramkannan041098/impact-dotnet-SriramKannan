@@ -25,9 +25,8 @@ namespace A3_TPLReflectionAttributes.Attributes
                 {
                     if (value.Length > attribute.MaxLength)
                     {
-                        Console.WriteLine( $"Warning: Property '{property.Name}' exceeds maximum length of {attribute.MaxLength}.");
-
-                        Console.WriteLine( $"Actual length: {value.Length}" );
+                        Console.WriteLine( $"Warning       : Property '{property.Name}' exceeds maximum length of {attribute.MaxLength}.");
+                        Console.WriteLine( $"Actual length : {value.Length}" );
                     }
                     else
                     {

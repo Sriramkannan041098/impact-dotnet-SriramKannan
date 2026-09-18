@@ -7,13 +7,10 @@
         [MaxLengthNo(10)]
         public string Name { get; set; }
 
-        public string Email { get; set; }
-
-        public User( int id, string name,  string email)
+        public User( int id, string name)
         {
             Id = id;
             Name = name;
-            Email = email;
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace A4_ModelViewController.Model
 {
-    public class Students
+    public class Student
     {
 
     }

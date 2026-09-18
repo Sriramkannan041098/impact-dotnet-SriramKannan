@@ -25,8 +25,10 @@ class Program
 
         // Task 1.6: Resolving naming conflicts by using fully qualified names
         Console.WriteLine("\n\nTask 1.6: Resolve Naming Conflicts:");
+        ModuleA.Helper.studentName = "Sanjana";
         ModuleA.Helper.Greet();
-        ModuleB.Helper.Greet();
+
+        //ModuleB.Helper.Greet();
 
         //Task 1.7: Demonstrating naming conventions
         Console.WriteLine("\n\nTask 1.7: Demonstrate Naming Conventions and handling Reserved Keywords:");
@@ -48,11 +50,11 @@ class Program
     {
         try
         {
-            #if !TRIAL_VERSION
+#if !TRIAL_VERSION
               Console.WriteLine("Running Trial Version");
-            #else
-              Console.WriteLine("Running Full Version");
-            #endif
+#else
+            Console.WriteLine("Running Full Version");
+#endif
         }
         catch (Exception ex)
         {

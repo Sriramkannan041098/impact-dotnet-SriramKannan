@@ -10,11 +10,13 @@ namespace SchoolManagement
         public string ID { get; set; }
 
 
-        public Students(string name, string id)
+        public Students(string q1, string q2)
         {            
-            Name = name;
-            ID = id;
+            Name = q1;
+            ID = q2;
         }
+
+
 
         public void DisplayStudentInfo()
         {

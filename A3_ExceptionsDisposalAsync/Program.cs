@@ -43,19 +43,21 @@ Console.WriteLine($"Outside using: {File.Exists(filePath)}\n");
 
 
 //Task 3.3 - Asynchronous
-Console.WriteLine("\n\nTask 3.2 - Asynchronous Operation");
+Console.WriteLine("\n\nTask 3.3 - Asynchronous Operation");
 UserService service =   new UserService();
 
 // Sequential
 Console.WriteLine("\n--- Sequential ---");
 
-Stopwatch sequentialWatch = Stopwatch.StartNew();
+Stopwatch sequentialWatch = Stopwatch.StartNew();    // stop watch timer - starts
 string user1 = await service.FetchUserDataAsync(1);
-string user2 = await service.FetchUserDataAsync(2);
+Console.WriteLine(user1);
+string user2 = await service.FetchUserDataAsync(2);  // here each task starts and waits until it finish
+Console.WriteLine(user2);
 string user3 = await service.FetchUserDataAsync(3);
+Console.WriteLine(user3);
 
-sequentialWatch.Stop();
-
+sequentialWatch.Stop();                              // stop watch timer - ends
 Console.WriteLine($"Sequential Time: {sequentialWatch.ElapsedMilliseconds} ms");
 
 
@@ -66,10 +68,14 @@ Stopwatch concurrentWatch = Stopwatch.StartNew();
 Task<string> task1 = service.FetchUserDataAsync(1);
 Task<string> task2 = service.FetchUserDataAsync(2);
 Task<string> task3 = service.FetchUserDataAsync(3);
+//Task<string> task4 = service.FetchUserDataAsync(4);
+//Task<string> task5 = service.FetchUserDataAsync(5);
+// The main use case of storing a Task is to start work now and wait for it later.
 
-string[] users = await Task.WhenAll(task1, task2, task3);
 
+// here all task are initiated togerther and waits later
+string[] newUser1 = await Task.WhenAll(task1, task2, task3);
+//await Task.Delay(3000);
+//string[] newUser2 = await Task.WhenAll(task4, task5);
 concurrentWatch.Stop();
-
 Console.WriteLine($"Concurrent Time: {concurrentWatch.ElapsedMilliseconds} ms");
-

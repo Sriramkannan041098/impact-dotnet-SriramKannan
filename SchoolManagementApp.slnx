@@ -19,4 +19,8 @@
     <Project Path="A3_ExceptionsDisposalAsync/A3_ExceptionsDisposalAsync.csproj" Id="da358d5f-efe7-4c35-8881-79134f077aea" />
     <Project Path="A3_TPLReflectionAttributes/A3_TPLReflectionAttributes.csproj" Id="4a183e1f-cc54-4eff-8d99-e4845354e026" />
   </Folder>
+  <Folder Name="/Assignment - 4/">
+    <Project Path="A4_ModelViewController/A4_ModelViewController.csproj" Id="706fc66c-d735-4896-b140-db1913b13a54" />
+  </Folder>
+  <Folder Name="/Assignment - 5/" />
 </Solution>

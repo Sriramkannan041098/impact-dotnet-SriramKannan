@@ -9,6 +9,7 @@ namespace A3_ExceptionsDisposalAsync.ExceptionalHandling
     {
         private decimal balance;
 
+
         // Constructor
         public BankAccount(decimal initialBalance)
         {
@@ -58,13 +59,11 @@ namespace A3_ExceptionsDisposalAsync.ExceptionalHandling
                 balance -= amount;
 
                 Console.WriteLine($"Withdrawal successful: {amount:C}");
-
                 Console.WriteLine($"Remaining balance: {balance:C}");
             }
             catch (InsufficientFundsException ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-
                 Console.WriteLine($"Deficit Amount: {ex.DeficitAmount:C}");
             }
             catch (Exception ex)

@@ -14,20 +14,24 @@ Logger logging = new Logger();
 
 
 
-//Task 3.5 - Singleton Pattern
+
+
+//Task 3.5 - Factory Method
 Console.WriteLine("\n\nTask 3.5 - Factory Method");
 
 //Simple Factory
 Console.WriteLine("Simple Factory:");
 
-IVehicle car = VehicleFactory.InduceVehichle("car");
+IVehicle car = VehicleFactory.InduceVehicle("car");
 car.Drive();
 
-IVehicle bike = VehicleFactory.InduceVehichle("bike");
+IVehicle bike = VehicleFactory.InduceVehicle("bike");
 bike.Drive();
 
-IVehicle truck = VehicleFactory.InduceVehichle("Truck");
+IVehicle truck = VehicleFactory.InduceVehicle("Truck");
 truck.Drive();
+//Simple Factory - A single class creates objects and 
+
 
 //Factory Method
 Console.WriteLine("\nFactory Method:");
@@ -37,12 +41,13 @@ carFactory.StartVehicle();
 
 VehicleFactoryMethod bikeFactory = new BikeFactory();
 bikeFactory.StartVehicle();
+//Factory method - Defines an interface/abstract method for object creation.
 
 
 
 
 
-//Task 3.6 - Singleton Pattern
+//Task 3.6 - Observer
 Console.WriteLine("\n\nTask 3.6 - Observer");
 
 
@@ -74,6 +79,17 @@ eventStockTicker.PriceChanged += (sender, args) =>
 eventStockTicker.ChangePrice("Sriram","Psiog Digital", 3850);
 eventStockTicker.ChangePrice("Kannan", "Psiog Digital", 3850);
 eventStockTicker.ChangePrice("Rajeshvari", "Psiog Digital", 3850);
+
+
+/* Observer Pattern
+ * The Observer Pattern is a design pattern where one object (Subject) 
+ * automatically notifies multiple dependent objects (Observers) 
+ * whenever its state changes.
+ *                        (OR)
+ * When observers subscribe to a subject, they are 
+ * automatically notified whenever the subject's state changes.
+ * This Design Pattern is called Observer Pattern
+ */
 
 
 

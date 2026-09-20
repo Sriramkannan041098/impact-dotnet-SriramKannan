@@ -8,7 +8,7 @@ namespace A3_ExceptionsDisposalAsync.Disposal
     {
         public string FilePath { get; }
 
-        private bool disposed;
+        private bool disposed;  // checkig to delete the file
 
         // Constructor
         public TempFileManager()
@@ -16,18 +16,17 @@ namespace A3_ExceptionsDisposalAsync.Disposal
             FilePath =
                 Path.Combine(
                     Path.GetTempPath(),
-                    $"temp_{Guid.NewGuid()}.txt"
-                );
+                    $"temp_{Guid.NewGuid()}.txt"  // temp_s@34tfdwfghgfh678765i$%&7asdfg.txt  
+                ); 
 
             File.WriteAllText( FilePath, "Temporary file content.");
-
-            Console.WriteLine( $"Temp file created: {FilePath}");
+            Console.WriteLine( $"Temp file created: {FilePath}");           
         }
 
         // Dispose method
         public void Dispose()
         {
-            Dispose(true);
+            Disposing(true);
 
             // The object has already performed
             // deterministic cleanup, so the finalizer
@@ -35,7 +34,7 @@ namespace A3_ExceptionsDisposalAsync.Disposal
             GC.SuppressFinalize(this);
         }
 
-        protected virtual void Dispose(bool disposing)
+        private void Disposing(bool disposing)
         {
             if (disposed)
             {
@@ -48,20 +47,18 @@ namespace A3_ExceptionsDisposalAsync.Disposal
             }
 
             // Delete temporary file
-            if (File.Exists(FilePath))
+            if (File.Exists(FilePath))  // inbuild method
             {
-                File.Delete(FilePath);
-
+                File.Delete(FilePath);  // inbuild method
                 Console.WriteLine("Temp file deleted.");
             }
-
             disposed = true;
         }
 
         // Finalizer
         ~TempFileManager()
         {
-            Dispose(false);
+            Disposing(false);
         }
     }
 }

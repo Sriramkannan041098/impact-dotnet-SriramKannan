@@ -6,11 +6,14 @@ namespace ModuleA
 {
     public static class Helper
     {
+        public static string? studentName;   // field
+
+        
         public static void Greet()
         {
             try
             {
-                Console.WriteLine("Hello from ModuleA Helper!");
+                Console.WriteLine($"Hello {studentName} from ModuleA Helper!");
             }
             catch (Exception ex)
             {

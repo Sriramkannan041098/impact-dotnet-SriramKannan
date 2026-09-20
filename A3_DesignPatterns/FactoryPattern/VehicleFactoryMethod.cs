@@ -13,3 +13,6 @@
         }
     }
 }
+/*
+    Factory Method Pattern: Creates objects without exposing the object creation logic to the client.
+ */

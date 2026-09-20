@@ -70,4 +70,6 @@ namespace A3_DesignPatterns.SingletonPattern
  * 
  * Task   - A Task represents a unit of work that is scheduled by .NET, usually on the ThreadPool.
  *          You commonly create it using Task.Run() and coordinate it using await, Wait(), or WaitAll().
+ *          
+ * Singleton Pattern : Ensures only one instance of a class exists throughout the application.
  */

@@ -10,7 +10,7 @@ namespace SchoolManagement
         public string ID { get; set; }
 
 
-        public Students(string q1, string q2)
+        public Students(string q1, string q2) //parameterized constructor
         {            
             Name = q1;
             ID = q2;

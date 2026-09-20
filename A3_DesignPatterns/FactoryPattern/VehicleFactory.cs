@@ -6,7 +6,7 @@ namespace A3_DesignPatterns.FactoryPattern
 {
     public static class VehicleFactory
     {
-        public static IVehicle InduceVehichle(string vehicle)
+        public static IVehicle InduceVehicle(string vehicle)
         {
             return vehicle.ToLower() switch
             {

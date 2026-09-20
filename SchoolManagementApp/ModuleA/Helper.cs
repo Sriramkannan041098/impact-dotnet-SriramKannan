@@ -6,7 +6,7 @@ namespace ModuleA
 {
     public static class Helper
     {
-        public static string? studentName;
+        public static string? studentName;   // field
 
         
         public static void Greet()

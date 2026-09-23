@@ -120,23 +120,23 @@ service.AddStudent(
 
 service2.AddTeacher(
     new Teacher(
-       1, "Seetha", "Assist. Professor", "seetha.k@lms.com"         
+       1, "Seetha", "Assist.Professor", "seetha.k@lms.com"         
     )
 );
 service2.AddTeacher(
     new Teacher(
-       2, "Lakshmi", "Sr. Professor", "lakshmi.j@lms.com"
+       2, "Lakshmi", "Sr.Professor", "lakshmi.j@lms.com"
     )
 );
 service2.AddTeacher(
     new Teacher(
-       3, "Lakshman", "Phd. Professor", "lakshman.lk@lms.com"
+       3, "Lakshman", "Phd.Professor", "lakshman.lk@lms.com"
     )
 );
 
 
 // Run application
-Console.WriteLine("\n\n                     Student and Teacher Management System");
+Console.WriteLine("\n\n                  Student and Teacher Management System");
 Console.WriteLine("\nMain Menu:");
 Console.WriteLine("1 Student");
 Console.WriteLine("2 Teacher");
@@ -162,3 +162,12 @@ else
     menuID = int.Parse(Console.ReadLine()!);
 }
 //((menuID == 1 ) ? (services.AddTransient<StudentView>()) : (services.AddTransient<TeacherView>())); 
+
+
+/*
+ * Dependency Injection is the process where a class receives its dependencies 
+ * from an external container instead of creating them with new itself. 
+ 
+ * For example, StudentService receives IRepository through its constructor, 
+ * and the DI container injects MemoryRepository at runtime. ✅
+ */

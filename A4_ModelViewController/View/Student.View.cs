@@ -24,7 +24,7 @@ namespace A4_ModelViewController.View
         public void PrintStudents(List<Student> students)
         {
             Console.WriteLine(
-                "\nID   Name           Age   Roll No     Email"
+                "\nID   Name          Age   Roll No     Email"
             );
 
             Console.WriteLine(
@@ -67,6 +67,16 @@ namespace A4_ModelViewController.View
                 rollNumber,
                 email
             );
+
+            //try
+            //{
+
+            //}
+            //catch(Exception ex)
+            //{
+            //    Console.WriteLine($"Unknown Error : ${ex.Message}");
+            //}
+
         }
 
 

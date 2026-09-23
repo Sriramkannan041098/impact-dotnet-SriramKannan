@@ -15,7 +15,10 @@ namespace A4_ModelViewController.View
 
             Console.WriteLine("1. Add Teacher");
             Console.WriteLine("2. View Teachers");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("3. Find Teacher");
+            Console.WriteLine("4. Update Teacher");
+            Console.WriteLine("5. Delete Teacher");
+            Console.WriteLine("6. Exit");
 
             Console.Write("Enter choice: ");
         }

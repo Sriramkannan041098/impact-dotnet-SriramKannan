@@ -22,5 +22,7 @@
   <Folder Name="/Assignment - 4/">
     <Project Path="A4_ModelViewController/A4_ModelViewController.csproj" Id="706fc66c-d735-4896-b140-db1913b13a54" />
   </Folder>
-  <Folder Name="/Assignment - 5/" />
+  <Folder Name="/Assignment - 6/">
+    <Project Path="A6_FileHandlingFundamentals/A6_FileHandlingFundamentals.csproj" Id="475c204d-ef2c-4522-be5b-9477aa196d96" />
+  </Folder>
 </Solution>

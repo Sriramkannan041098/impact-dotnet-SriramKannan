@@ -17,6 +17,8 @@ namespace A4_ModelViewController.Controller
         {
             _studentService = studentService;
             _studentView = studentView;
+
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
         }
 
         public void Run()
@@ -72,11 +74,11 @@ namespace A4_ModelViewController.Controller
 
             if (result)
             {
-                _studentView.ShowMessage( "Student added successfully." );
+                _studentView.ShowMessage( "Student added successfully..! ✔️" );
             }
             else
             {
-                _studentView.ShowMessage("Failed to add student." );
+                _studentView.ShowMessage("Failed to add student..! ❌" );
             }
         }
 
@@ -101,7 +103,7 @@ namespace A4_ModelViewController.Controller
             }
             else
             {
-                _studentView.ShowMessage( "Student not found." );
+                _studentView.ShowMessage( "Student Not Found..!❌" );
             }
         }
 
@@ -113,8 +115,8 @@ namespace A4_ModelViewController.Controller
 
             _studentView.ShowMessage(
                 result
-                    ? "Student updated successfully."
-                    : "Student update failed."
+                    ? "Student updated successfully..! ✔️"
+                    : "👎 Student update failed..!"
             );
         }
 
@@ -128,8 +130,8 @@ namespace A4_ModelViewController.Controller
 
             _studentView.ShowMessage(
                 result
-                    ? "Student deleted successfully."
-                    : "Student deletion failed."
+                    ? "Student deleted successfully..!✔️"
+                    : "👎 Student deletion failed..!"
             );
         }
     }

@@ -41,8 +41,7 @@ namespace A4_ModelViewController.Service
 
         public bool UpdateTeacher(Teacher teacher)
         {
-            Teacher? existingTeacher =
-                _repository.GetById(teacher.Id);
+            Teacher? existingTeacher =  _repository.GetById(teacher.Id);
 
             if (existingTeacher == null)
             {

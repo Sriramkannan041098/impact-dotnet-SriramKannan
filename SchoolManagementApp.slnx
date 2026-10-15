@@ -30,6 +30,9 @@
     <Project Path="A6_HashingHMACAndStreaming/A6_HashingHMACAndStreaming.csproj" Id="5844cb7b-fa51-46b8-b8a9-dbacdcdb37a4" />
   </Folder>
   <Folder Name="/Other Assignments/">
-    <File Path="SriramKannan-Assignment-5.zip" />
+    <File Path="../SriramKannan-Assignment-10.zip" />
+    <File Path="../SriramKannan-Assignment-5.zip" />
+    <File Path="../SriramKannan-Assignment-7.zip" />
+    <File Path="../SriramKannan-Assignment-9.7z" />
   </Folder>
 </Solution>

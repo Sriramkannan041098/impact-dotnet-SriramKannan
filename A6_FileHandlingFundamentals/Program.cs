@@ -1,4 +1,5 @@
-﻿using A6_FileHandlingFundamentals.EncodingHashingEncryption;
+﻿using A6_FileHandlingFundamentals.CryptoModes;
+using A6_FileHandlingFundamentals.EncodingHashingEncryption;
 using A6_FileHandlingFundamentals.FileHandling;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -15,5 +16,8 @@ Console.WriteLine("\n\nTask 6.2 : Encoding, hashing and Encryption demostration"
 EncodingHashingEncryptionDemo demo2 =  new EncodingHashingEncryptionDemo();
 demo2.RunDemo2();
 
-
+//Task 6.3 :- CryptoModes demostration
+Console.WriteLine("\n\nTask 6.3:- CryptoModes demostration");
+CryptoModes demo3 = new CryptoModes();
+demo3.RunCrypto();
 

@@ -23,6 +23,13 @@
     <Project Path="A4_ModelViewController/A4_ModelViewController.csproj" Id="706fc66c-d735-4896-b140-db1913b13a54" />
   </Folder>
   <Folder Name="/Assignment - 6/">
+    <Project Path="A6_AES_CBC_Encryption/A6_AES_CBC_Encryption.csproj" Id="83d20bb7-84a7-4e63-8f97-9f2bbf600e20" />
+    <Project Path="A6_AsymmetricAuthAndAuthorization-1/A6_AsymmetricAuthAndAuthorization-1.csproj" Id="0c746478-dea8-4a8f-8696-9ae80f9a8cd8" />
+    <Project Path="A6_AuthenticatedEncryption/A6_AuthenticatedEncryption.csproj" Id="98b1ac50-b34f-4080-8f48-8a46c7f5f21f" />
     <Project Path="A6_FileHandlingFundamentals/A6_FileHandlingFundamentals.csproj" Id="475c204d-ef2c-4522-be5b-9477aa196d96" />
+    <Project Path="A6_HashingHMACAndStreaming/A6_HashingHMACAndStreaming.csproj" Id="5844cb7b-fa51-46b8-b8a9-dbacdcdb37a4" />
+  </Folder>
+  <Folder Name="/Other Assignments/">
+    <File Path="SriramKannan-Assignment-5.zip" />
   </Folder>
 </Solution>

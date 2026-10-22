@@ -1,0 +1,13 @@
+.auth{
+    display: flex; justify-content: center; align-items: center; 
+}
+
+.loginPage{
+    border: 2px solid black;
+    color: black;
+
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    gap: 10px;
+    background-color: whitesmoke;
+    padding: 10px 10px;
+}
